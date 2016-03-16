@@ -1,0 +1,27 @@
+/*
+Theme Name: CAHNRS-Theme-WRPL 
+Theme URI: //cahnrs.wsu.edu/communications/
+Description: Western Extension Program Leaders Theme to be housed on extension.wsu.edu 
+Version: 0.1.0
+Author: Don Pierce
+Author URI: //cahnrs.wsu.edu/communications/
+*/
+body { 
+background:#5e6a71;
+font-family: 'Open Sans', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+
+}
+h1, h3, h5, strong {
+	font-weight: bold;
+	color: #50878E;
+}
+.content-wrap { border: 1px #ccc solid; max-width: 1200px; margin: 0 auto;}
+#header { border: 2px #a2a2a2 solid; height:69px;}
+#header-logo {border: 1px #a2a2a2 solid; height:47px; background:#2b3034; color:#e4e4e4; }
+#header-nav {border: 1px #a2a2a2 solid;height: 22px; background: #50878e; color:#fff; text-align:right;}
+#home-banner {border: 1px #a2a2a2 solid; height:228px; background: #fff; }
+#home-banner-left {border: 1px #a2a2a2 solid; width: 595px; }
+#home-banner-right {border: 1px #a2a2a2 solid; width: 595px; float: right;}
+#home-section {border: 1px #a2a2a2 solid; height:81px; background: #eff0f2; }
+#home-gallery {border: 1px #a2a2a2 solid; height:471px; background: #fff; }
+#footer { border: 2px #a2a2a2 solid; height:76px; background: #2b3034;  color:#e4e4e4; text-align:center; }
