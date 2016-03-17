@@ -16,12 +16,42 @@ h1, h3, h5, strong {
 	color: #50878E;
 }
 .content-wrap { border: 1px #ccc solid; max-width: 1200px; margin: 0 auto;}
-#header { border: 2px #a2a2a2 solid; height:69px;}
-#header-logo {border: 1px #a2a2a2 solid; height:47px; background:#2b3034; color:#e4e4e4; }
-#header-nav {border: 1px #a2a2a2 solid;height: 22px; background: #50878e; color:#fff; text-align:right;}
-#home-banner {border: 1px #a2a2a2 solid; height:228px; background: #fff; }
-#home-banner-left {border: 1px #a2a2a2 solid; width: 595px; }
-#home-banner-right {border: 1px #a2a2a2 solid; width: 595px; float: right;}
+#header { border: 2px #a2a2a2 solid; height:140px;}
+#header-logo {border: 1px #a2a2a2 solid; height:95px; background:#2b3034; color:#e4e4e4; }
+#header-logo-left {border: 1px #a2a2a2 solid; width: 595px; float: left;}
+#header-logo-right {border: 1px #a2a2a2 solid; left-margin: 601px; float:right; }
+#header-nav {border: 1px #a2a2a2 solid;height: 44px; background: #50878e; color:#fff; text-align:right;}
+#home-banner {border: 1px #a2a2a2 solid; height:228px; background: #fff; height: 320px;}
+#home-banner-left {border: 1px #a2a2a2 solid; width: 595px; float: left;}
+#home-banner-right {border: 1px #a2a2a2 solid; left-margin: 601px; }
 #home-section {border: 1px #a2a2a2 solid; height:81px; background: #eff0f2; }
 #home-gallery {border: 1px #a2a2a2 solid; height:471px; background: #fff; }
 #footer { border: 2px #a2a2a2 solid; height:76px; background: #2b3034;  color:#e4e4e4; text-align:center; }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 12px 8px;
+    text-decoration: none;
+}
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #2b3034;
+	}
+	
+#hrpl-searchform {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    width: 249px;
+    height: 30px;
+}
