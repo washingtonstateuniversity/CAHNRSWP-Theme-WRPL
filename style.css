@@ -8,50 +8,129 @@ Author URI: //cahnrs.wsu.edu/communications/
 */
 body { 
 background:#5e6a71;
-font-family: 'Open Sans', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+font-family: "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
 
 }
 h1, h3, h5, strong {
 	font-weight: bold;
 	color: #50878E;
 }
-.content-wrap { border: 1px #ccc solid; max-width: 1200px; margin: 0 auto;}
-#header { border: 2px #a2a2a2 solid; height:140px;}
-#header-logo {border: 1px #a2a2a2 solid; height:95px; background:#2b3034; color:#e4e4e4; }
-#header-logo-left {border: 1px #a2a2a2 solid; width: 595px; float: left;}
-#header-logo-right {border: 1px #a2a2a2 solid; left-margin: 601px; float:right; }
-#header-nav {border: 1px #a2a2a2 solid;height: 44px; background: #50878e; color:#fff; text-align:right;}
-#home-banner {border: 1px #a2a2a2 solid; height:228px; background: #fff; height: 320px;}
-#home-banner-left {border: 1px #a2a2a2 solid; width: 595px; float: left;}
-#home-banner-right {border: 1px #a2a2a2 solid; left-margin: 601px; }
-#home-section {border: 1px #a2a2a2 solid; height:81px; background: #eff0f2; }
-#home-gallery {border: 1px #a2a2a2 solid; height:471px; background: #fff; }
-#footer { border: 2px #a2a2a2 solid; height:76px; background: #2b3034;  color:#e4e4e4; text-align:center; }
-ul {
+.content-wrap {max-width: 1200px; margin: 0 auto;}
+
+.table{
+	display: table;
+	width:100%;
+	border-collapse;
+}
+  .table-row{
+   	display: table-row;
+   }
+    .table-cell {
+	  display: table-cell;
+    	padding:1em;
+    	border:#f0f0f0 1px solid;
+		height: 300px;
+     }
+	 .table-cell-right {
+	  display: table-cell;
+	  	width: 50%;
+    	background-size: cover;
+		background-image: url(images/home-banner-pic.jpg);
+     }
+
+#global-header {}
+#header-logo {height:95px; background:#2b3034; color:#e4e4e4; }
+#header-logo-left {width: 595px; float: left;}
+#header-logo-right {float:right; }
+#header-nav {background: #50878e; color:#fff; text-align:right;}
+#home-banner {background: #fff;}
+
+
+#home-section {background: #eff0f2; padding: 1rem 0;}
+#home-gallery {height:942px; background: #fff; }
+
+#home-gallery article {
+	display: inline;
+	
+	margin-top: 35px;
+	float: left;
+	width: 25%;
+	vertical-align: top;
+	}
+
+#home-gallery article > ul {
+	margin: 0 0.5rem 1rem;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	
+	}
+
+
+#home-gallery article .image {
+	margin-left:0%;
+}
+
+#home-gallery article .image img {
+	width: 100%;
+	display: block;
+}
+
+
+#home-gallery article .title{
+	font-size: 1.3rem;
+	color: #50878E;
+	text-align: center;
+	padding: 8px 0px;
+}
+#home-gallery article .summary{
+	font-size: .7rem;
+	background-color: #eff0f2;
+	padding: 10px 1rem;
+	
+}
+#home-gallery article .link{
+	
+	text-align: center;
+	padding: 8px;
+	
+}
+#home-gallery article ul {
+    list-style-type: none;
+    margin: 0 0.5rem 1rem;
+    padding: 0;
+}
+
+
+#global-footer {background: #2b3034;  color:#e4e4e4; text-align:center; }
+footer {background: #2b3034;  color:#e4e4e4; text-align:center; }
+
+#header-nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-li {
+#header-nav li {
     display: inline;
 }
-li a {
+#header-nav li a {
     display: inline-block;
     color: white;
     text-align: center;
     padding: 12px 8px;
     text-decoration: none;
 }
-/* Change the link color to #111 (black) on hover */
-li a:hover {
+
+#header-nav li a:hover {
     background-color: #2b3034;
 	}
 	
 #hrpl-searchform {
     position: absolute;
     top: 40px;
-    right: 30px;
-    width: 249px;
+    right: 50px;
+    width: 149px;
     height: 30px;
 }
