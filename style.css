@@ -9,6 +9,7 @@ Author URI: //cahnrs.wsu.edu/communications/
 body { 
 background:#5e6a71;
 font-family: "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+margin: 0;
 
 }
 h1, h3, h5, strong {
@@ -39,15 +40,24 @@ h1, h3, h5, strong {
      }
 
 #global-header {}
-#header-logo {height:95px; background:#2b3034; color:#e4e4e4; }
-#header-logo-left {width: 595px; float: left;}
-#header-logo-right {float:right; }
+#header-logo {
+	background:#2b3034; 
+	color:#e4e4e4; 
+	padding: 25px 0;
+	}
+
 #header-nav {background: #50878e; color:#fff; text-align:right;}
 #home-banner {background: #fff;}
 
 
 #home-section {background: #eff0f2; padding: 1rem 0;}
-#home-gallery {height:942px; background: #fff; }
+.section {
+	}
+#home-gallery {
+   	background: #fff;
+	
+		
+	}
 
 #home-gallery article {
 	display: inline;
@@ -103,8 +113,13 @@ h1, h3, h5, strong {
 }
 
 
-#global-footer {background: #2b3034;  color:#e4e4e4; text-align:center; }
-footer {background: #2b3034;  color:#e4e4e4; text-align:center; }
+#global-footer {
+	background: #2b3034;  
+	color:#e4e4e4; 
+	text-align:center; 
+	
+	}
+footer {}
 
 #header-nav ul {
     list-style-type: none;
@@ -127,10 +142,30 @@ footer {background: #2b3034;  color:#e4e4e4; text-align:center; }
     background-color: #2b3034;
 	}
 	
-#hrpl-searchform {
-    position: absolute;
-    top: 40px;
-    right: 50px;
-    width: 149px;
-    height: 30px;
+#header-logo .content-wrap {
+	position: relative;
+}
+
+#header-logo a { 
+    display: block;
+    height: 40px;
+	width: 400px;
+	background-color: #ccc;	
+}
+
+#header-logo form {
+ display: inline-block;
+ position: absolute;
+ top: 4px;
+ right: 0;
+}
+
+#header-logo input {
+ text-indent: .5rem;	
+ line-height: 30px;
+ height: 30px;
+ width: 149px;
+ outline: none;
+ border: none;
+ border-radius: 4px;	
 }
