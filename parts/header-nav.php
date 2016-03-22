@@ -1,5 +1,10 @@
 <div id="header-nav">
 	<div class="content-wrap">
-          <b>HOME</b> | LEARN  | CONTACT US   
+         <?php wp_nav_menu(array( 
+		    'theme_location' => 'header-menu',
+			'menu' => 'header-menu',
+		    'orderby' => 'menu_order' 
+			 )
+			);?>
     </div>
 </div>

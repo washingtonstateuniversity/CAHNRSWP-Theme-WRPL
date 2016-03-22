@@ -1,8 +1,14 @@
-<div id="footer">
+<footer>
+<div id="global-footer">
  <div class="content-wrap">
-  <p>Footer information</p>
+ <p></p>
+  <p>Western Regional Program Leaders<br />
+    Address<br />
+    City, State Zip<br />
+    Phone</p>
  </div>
- </div>
+</div>
+</footer>
   <?php wp_footer(); //Crucial footer hook! ?> 
 </body>
 </html>
