@@ -1,3 +1,4 @@
+<section>
 <div id="home-section">
  <div class="content-wrap">
   <h2><?php the_title();?></h2> 
@@ -16,3 +17,4 @@
     </p>
  </div>
 </div>
+</section>

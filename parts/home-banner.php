@@ -1,3 +1,4 @@
+<section>
 <div id="home-banner">
   <div class="content-wrap">
   <div class="table">
@@ -35,3 +36,4 @@
  
   </div>
  </div>
+ </section>

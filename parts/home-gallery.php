@@ -1,3 +1,4 @@
+<section>
 <div id="home-gallery">
  <div class="content-wrap">
  <article>
@@ -52,3 +53,4 @@
      </article>
   </div>
 </div>
+</section>
