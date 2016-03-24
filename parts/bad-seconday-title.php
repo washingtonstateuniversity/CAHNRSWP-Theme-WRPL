@@ -1,5 +1,6 @@
    <section>
      <div id="title-section">
+       <div class="content-area">
         <h2><?php the_title();?></h2>
           <p>
            <?php   
@@ -15,5 +16,6 @@
   ?>			  
           
            </p>
+        </div>    
        </div>
-      </section>
+ </section>

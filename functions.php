@@ -1,8 +1,15 @@
 <?php 
 /* Add Menu options to theme  */
 function register_my_menu() {
-//  register_nav_menu('wrpl-menu',__( 'New Menu' ));
-   register_nav_menu('header-menu',__( 'Header Menu' ));
+
+   register_nav_menus(
+      array(
+      'header-menu' => __( 'Header Menu' ),
+	  'primary' => __( 'Main Navigation Menu' )
+	   ) 
+	 );
+   
+ //  register_nav_menu( 'primary', 'Main Navigation Menu' );
 }
 add_action( 'init', 'register_my_menu' );
 
