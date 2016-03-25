@@ -11,10 +11,8 @@
     <?php endif; ?>
     
      <div class="video-section" style="background-image: url('<?php echo $image; ?>');">
- 
-   
-       <?php  get_template_part( 'parts/secondary', 'youtube2' ); ?>
-        <?php //get_template_part( 'parts/secondary', 'overlayembed' ); ?>
+
+       <?php get_template_part( 'parts/secondary', 'youtube' ); ?>
      
       </div>
       

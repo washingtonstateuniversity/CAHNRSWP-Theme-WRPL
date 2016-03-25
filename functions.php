@@ -46,6 +46,12 @@ $my_post_array = array('post','page');
  $wp_query->set( 'post_type', $my_post_array );
 }
 
+add_action( 'wp_enqueue_scripts', 'enqueue_scripts' );
+
+function enqueue_scripts() {
+ wp_enqueue_script( 'video-overlay', get_bloginfo( 'stylesheet_directory' ) . '/js/vid.js', array( 'jquery' ), '1.0.0' );
+}
+
 
 
 ?>
