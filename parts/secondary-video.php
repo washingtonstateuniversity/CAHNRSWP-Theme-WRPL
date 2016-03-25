@@ -1,5 +1,3 @@
-  <section>
-    
       <?php  $posts_page_id = get_option( 'page_for_posts' ); 
 	  
 	  ?>
@@ -10,13 +8,30 @@
        $image = get_bloginfo( 'stylesheet_directory') . '/images/home-banner-pic.jpg'; ?>
     <?php endif; ?>
     
-     <div class="video-section" style="background-image: url('<?php echo $image; ?>');">
+<?php $videoID = get_post_meta($post->ID, 'video_url', true);?>
  
-   
-       <?php  get_template_part( 'parts/secondary', 'youtube2' ); ?>
-        <?php //get_template_part( 'parts/secondary', 'overlayembed' ); ?>
+ <section class="video-section <?php if( $videoID ) echo ' has-video';?>" style="background-image: url('<?php echo $image; ?>');">
+    
+ <img src="<?php echo get_bloginfo( 'stylesheet_directory') ?>/images/bg-cover.png" alt="bg-cover" />
+<?php
+// Get the video URL and put it in the $video variable
+      
+	
+	// Check if there is in fact a video URL
+
+	
+if ($videoID) {
+ 
+  
+	     echo  '<iframe class="video-embed" frameborder="0" allowfullscreen="" src="//www.youtube.com/embed/' . $videoID .'?rel=0&color=white&controls=0&showinfo=0" replaced="true"></iframe>';
+
+}
+
+	
+?>
+  
      
-      </div>
+   
       
  
   </section>
