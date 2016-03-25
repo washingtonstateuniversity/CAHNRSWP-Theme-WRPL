@@ -52,6 +52,11 @@ function enqueue_scripts() {
  wp_enqueue_script( 'video-overlay', get_bloginfo( 'stylesheet_directory' ) . '/js/vid.js', array( 'jquery' ), '1.0.0' );
 }
 
+add_action( 'edit_form_after_title', 'myprefix_edit_form_after_title' );
+function myprefix_edit_form_after_title() {
+    echo '<h2>YouTube Video ID</h2>';
+}
+
 
 
 ?>
