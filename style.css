@@ -364,9 +364,18 @@ background-position: center center;
 
 .archive {
 	padding: 0 0 1rem 0;
+	overflow: hidden;
 }
 .archive article {
 	padding: .8rem 1rem .1rem 1rem;
+}
+
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
 }
 
 .archive-thumb {
