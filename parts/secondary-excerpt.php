@@ -2,13 +2,30 @@
        <div class="content-area">
          <div class="archive">
           <?php   
-     if ( have_posts() ) { 
-			 while ( have_posts() ) {
-				the_post(); 
+		  	$args = array(
+		'post_type' => 'page',
+		'exclude' => $frontpage_id,
+		'post_status' => 'publish',
+		'orderby' => 'menu_order title',
+		'order' => 'ASC', 
+		'tax_query' => array(
+			array(
+			'taxonomy' => 'category',
+			'field'    => 'slug',
+			'terms'    => array( 'professional-development' ),
+           ),   	
+		  ),
+	    );
+		
+			$the_query = new WP_Query( $args );
+		
+     if ( $the_query->have_posts() ) { 
+			 while ( $the_query->have_posts() ) {
+				$the_query->the_post(); 
 					//
-				echo '<article>';
-				echo '<div class="archive-thumb">';
-					if ( has_post_thumbnail() ) {
+				echo '<article class="clearfix">';
+				echo '<div class="archive-thumb" >';
+					if ( has_post_thumbnail($the_query->post->ID) ) {
        				   the_post_thumbnail(array(100, 100));
 					} 
 					else {

@@ -11,6 +11,8 @@
 		'post_type' => 'page',
 		'exclude' => $frontpage_id,
 		'post_status' => 'publish',
+		'orderby' => 'menu_order title',
+		'order' => 'ASC', 
 		'tax_query' => array(
 			array(
 			'taxonomy' => 'category',

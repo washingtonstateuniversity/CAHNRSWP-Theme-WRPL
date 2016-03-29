@@ -8,7 +8,9 @@
        $image = get_bloginfo( 'stylesheet_directory') . '/images/home-banner-pic.jpg'; ?>
     <?php endif; ?>
     
-<?php $videoID = get_post_meta($post->ID, 'video_url', true);?>
+<?php //$videoID = get_post_meta($post->ID, 'video_url', true);?>
+
+<?php $videoID = get_post_meta( $post->ID,'_wrpl_meta_box_text',TRUE ); ?>
  
  <section class="video-section <?php if( $videoID ) echo ' has-video';?>" style="background-image: url('<?php echo $image; ?>');">
     
