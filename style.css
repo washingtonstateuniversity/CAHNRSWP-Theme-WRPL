@@ -10,8 +10,13 @@ body {
 background:#fff;
 font-family: "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
 margin: 0;
-
+/* added for to push down footer - start */
+padding: 0;
+height:100%;
+/* added for to push down footer - end */
 }
+
+
 h1, h3, h5, strong {
 	font-weight: bold;
 	color: #50878E;
@@ -126,13 +131,18 @@ h1, h3, h5, strong {
 
 footer {
 	
+	
 	}
 
 #global-footer {
 	background: #2b3034;  
 	color:#e4e4e4; 
 	text-align:center; 
+	padding: 1rem 0;
 	
+	/* added for to push down footer - start */
+	height: 100px /* height of footer */
+	/* added for to push down footer - end */
 	}
 #global-footer p {
 	margin: 0 auto;
@@ -162,6 +172,7 @@ footer {
 #header-logo .content-wrap {
 	position: relative;
 }
+
 
 #header-logo a { 
     display: block;
@@ -193,11 +204,32 @@ main {max-width: 1200px; margin: 0 auto; background: #282828; }
 
 .content-area { background: #fff; 
                 margin: 0 0 0 300px; 
-				padding: .1rem 1rem .1rem 1rem;
+/*				padding: .1rem 1rem .1rem 1rem; */
+                padding: .1rem 2rem .1rem 2rem;
+				
+				/* added for to push down footer - start */
+				padding-bottom:100px;   /* Height of the footer */
+				/* added for to push down footer - end */
 				}
 
 /*.content-area p {margin: 0 0 0 1rem; padding: 0 0 .25rem 0; } */
-.content-area h1, h2, h3, h4 {color: #4f868d; margin: 0 .1rem 0 .1rem;}
+.content-area h1, h2, h3, h4 {
+  color: #4f868d; 
+  margin: .5rem 0;
+/*  margin: 0 .1rem 0 .1rem; */
+
+}
+
+/* added for to push down footer - start */
+#container {
+   min-height:100%;
+   position:relative;
+}
+/* added for to push down footer - end */
+
+
+
+
 
 /* primary navigation secton */
 .primary-nav {
@@ -223,7 +255,7 @@ main {max-width: 1200px; margin: 0 auto; background: #282828; }
 .primary-nav li a {
     display: block;
 	color: white;
-	padding: 0 .2rem;
+	padding: 0 1rem;
 	text-decoration: none;
 	position: relative;
 	height: 50px;
@@ -240,16 +272,17 @@ main {max-width: 1200px; margin: 0 auto; background: #282828; }
 	height: 0; 
 	border-top: 25px solid transparent;
 	border-bottom: 25px solid transparent;
-	border-left: 25px solid #50878e;
+	border-left: 25px solid #669999;
 }
 
 .primary-nav li a:hover {
-    background: #50878e;
+    background: #669999;
 	
 	
 }
 .current-menu-item > a {
 	background: #50878e;
+	font-weight: bold;
 }
 .current-menu-item > a:after {
 	content:'';
@@ -346,7 +379,8 @@ background-position: center center;
 #title-section {
 	background: #eff0f2; 
     margin: 0 0 0 300px;
-	padding: .8rem 1rem .1rem 1rem;
+/* 	padding: .8rem 1rem .1rem 1rem; */
+    padding: .8rem 2rem .8rem 2rem;
 }
 /* 	
 .title-content-area {

@@ -1,6 +1,8 @@
+<div id="container">
 <?php get_header(); ?>
 
   <main>
+  
   
     <?php get_template_part( 'parts/secondary', 'nav' ); ?> 
     <?php get_template_part( 'parts/secondary', 'video' ); ?>
@@ -10,3 +12,4 @@
   </main>
 
 <?php get_footer(); ?>
+</div>
