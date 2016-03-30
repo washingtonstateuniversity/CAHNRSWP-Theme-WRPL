@@ -1,6 +1,6 @@
    <section>
        <div class="content-area">
-       <p>
+       
           <?php   
      if ( have_posts() ) { 
 			 while ( have_posts() ) {
@@ -12,6 +12,6 @@
       } //end if have_posts
 	  
   ?>			  
-       </p>
+       
        </div>
       </section>
