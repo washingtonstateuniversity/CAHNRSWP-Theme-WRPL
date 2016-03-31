@@ -1,3 +1,4 @@
+</div> <!-- close container //-->
 <footer>
 <div id="global-footer">
  <div class="content-wrap">
@@ -9,6 +10,7 @@
  </div>
 </div>
 </footer>
+
   <?php wp_footer(); //Crucial footer hook! ?> 
 </body>
 </html>

@@ -10,6 +10,7 @@
 </head>
 
 <body>
+<div id="container">
 <div id="header">
 
   <?php get_template_part( 'parts/header', 'logo' ); ?>
