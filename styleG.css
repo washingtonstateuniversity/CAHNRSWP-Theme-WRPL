@@ -25,6 +25,8 @@ h1, h3, h5, strong {
 }
 .content-wrap {max-width: 1200px; margin: 0 auto;}
 
+.content-wrap-nav-main {max-width: 1200px; margin: 0 auto; background:#282828;}
+
 .table{
 	display: table;
 	width:100%;
@@ -137,11 +139,12 @@ footer {
 	
 	height: 100px; /* height of footer */
 	/* added for to push down footer - end */
-	
+
 	}
 
 #global-footer {
-	background: #2b3034;  
+/*	background: #2b3034; */
+	background: #282828; 
 	color:#e4e4e4; 
 	text-align:center; 
 	padding: 1rem 0;
@@ -204,16 +207,21 @@ footer {
 /* Secondary page layout */
 
 
-main {max-width: 1200px; margin: 0 auto; background: #282828;
+main {
+	max-width: 900px; 
 
-			
+    margin: 0 0 0 300px; 
+    background: #fff;
+
  }
 
-.content-area { background: #fff; 
-                margin: 0 0 0 300px; 
+.content-area {  
+   /*             margin: 0 0 0 300px;  */
 /*				padding: .1rem 1rem .1rem 1rem; */
-                padding: .1rem 2rem .1rem 2rem;
-            
+/*                padding: .1rem 2rem .1rem 2rem; */
+				padding: 0 2rem 0 2rem;;
+		
+              
 				}
 
 /*.content-area p {margin: 0 0 0 1rem; padding: 0 0 .25rem 0; } */
@@ -223,11 +231,22 @@ main {max-width: 1200px; margin: 0 auto; background: #282828;
 /*  margin: 0 .1rem 0 .1rem; */
 
 }
+.content-area p {
+	margin: 1rem 0 0 0;
+}
+
 
 /* added for to push down footer - start */
 .container {
-   min-height:100%;
+   
    position:relative; 
+  max-width: 1200px;  
+/*    width: 100%; */
+  min-height:100%;
+	
+   
+   margin: 0 auto;
+   background: #282828; 
 }
 /* added for to push down footer - end */
 
@@ -238,8 +257,10 @@ main {max-width: 1200px; margin: 0 auto; background: #282828;
 /* primary navigation secton */
 .primary-nav {
 	float: left;
-	width: 300px; 
+	width: 300px;
+	
 	margin: 0;
+	background: #282828;
 	
 	}
 
@@ -305,7 +326,7 @@ main {max-width: 1200px; margin: 0 auto; background: #282828;
 .video-section {
 /* height: 490px; */
 position: relative;
-margin: 0 0 0 300px;
+/* margin: 0 0 0 300px; */
 background-size: cover; 
 background-image: url(images/home-banner-pic.jpg); 
 }
@@ -382,7 +403,7 @@ background-position: center center;
 /* title secton */
 #title-section {
 	background: #eff0f2; 
-    margin: 0 0 0 300px;
+ /*   margin: 0 0 0 300px;*/
 /* 	padding: .8rem 1rem .1rem 1rem; */
     padding: .8rem 2rem .8rem 2rem;
 }
