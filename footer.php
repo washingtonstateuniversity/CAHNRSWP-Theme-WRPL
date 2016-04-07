@@ -1,4 +1,4 @@
-</div> <!-- close container //-->
+<!-- </div>  close container //-->
 <footer>
 <div id="global-footer">
  <div class="content-wrap">

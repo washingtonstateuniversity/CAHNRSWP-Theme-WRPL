@@ -10,10 +10,12 @@
 </head>
 
 <body>
-<div id="container">
-<div id="header">
+<!-- <div id="container"> //-->
+<header>
+<!-- <div id="header"> //-->
 
   <?php get_template_part( 'parts/header', 'logo' ); ?>
   <?php get_template_part( 'parts/header', 'nav' ); ?>
 
-</div>
+<!--</div> //-->
+</header>
