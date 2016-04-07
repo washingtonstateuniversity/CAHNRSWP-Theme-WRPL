@@ -1,12 +1,5 @@
-/*
-Theme Name: CAHNRS-Theme-WRPL 
-Theme URI: //cahnrs.wsu.edu/communications/
-Description: Western Extension Program Leaders Theme to be housed on extension.wsu.edu 
-Version: 0.1.0
-Author: Don Pierce
-Author URI: //cahnrs.wsu.edu/communications/
-*/
-
+@charset "utf-8";
+/* CSS Document */
 
 body, html{ 
 height:100%; 
@@ -313,3 +306,7 @@ footer{
 #global-footer p {
 	margin: 0 auto;
 }
+
+
+
+

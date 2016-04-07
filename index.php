@@ -1,8 +1,14 @@
 <?php get_header(); ?>
-  <main>
-    <?php get_template_part( 'parts/secondary', 'nav' ); ?> 
-    <?php get_template_part( 'parts/excerpt', 'title' ); ?>  
+<div class="wrapper">
+     <div class="content-wrap">
 
+    <?php get_template_part( 'parts/secondary', 'nav' ); ?> 
+     <main>
+    <?php get_template_part( 'parts/excerpt', 'title' ); ?>  
     <?php get_template_part( 'parts/secondary', 'excerpt' );?>
-</main>
+
+    </main>
+   </div> <!-- End .content-wrap -->   
+</div><!--end wrapper-->
+
 <?php get_footer(); ?>
