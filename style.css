@@ -353,8 +353,11 @@ main {
 
 @media screen and (max-width: 1200px) {
     header{
-        padding: 0 1rem;
+        padding: 0 .15rem;
     }
+	#home-gallery article {
+	  width: 33%;	
+	}
 }
 
 @media screen and (max-width: 900px) {
@@ -366,7 +369,13 @@ main {
 	main {
       margin: 0 0 0 200px;
 	}
-    
+	#home-gallery article {
+	width: 50%;	
+	
+	}
+    #home-gallery .content-wrap {
+		 font-size: 65%;
+		}
 }
 
 @media screen and (max-width: 700px) {
@@ -382,6 +391,12 @@ main {
 	.primary-nav {
 	display: none;	
 	}
+	#home-gallery article {
+	  width: 100%;	
+	}
+	 #home-gallery .content-wrap {
+		 font-size: 50%;
+		}
 	
 }
 
