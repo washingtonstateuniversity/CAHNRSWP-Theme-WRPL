@@ -1,6 +1,5 @@
-   <section>
-       <div class="content-area">
-       
+ <section class="content-area">
+       <div class="content">
           <?php   
      if ( have_posts() ) { 
 			 while ( have_posts() ) {

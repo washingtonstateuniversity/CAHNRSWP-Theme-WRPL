@@ -1,5 +1,5 @@
-   <section>
-       <div class="content-area">
+   <section class="content-area">
+       <div class="content">
          <div class="archive">
           <?php   
 		  	$args = array(
@@ -55,5 +55,5 @@
   ?>	
          </div>
   
-       </div>
+       </div> <!-- class="content" -->
       </section>

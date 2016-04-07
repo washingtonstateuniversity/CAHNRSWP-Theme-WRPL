@@ -1,5 +1,4 @@
-<section>
-    <div class="primary-nav">
+ <nav class="primary-nav">
 
     <?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff */ ?>
 <!--    
@@ -11,5 +10,4 @@
     <?php wp_nav_menu( array( 'container_class' => 'main-nav', 'theme_location' => 'primary' ) ); ?>
 
  
-    </div>
-</section>
+</nav>

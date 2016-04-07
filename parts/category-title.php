@@ -1,5 +1,5 @@
-   <section>
-     <div id="title-section">
+<section id="title-section">
+    <!--     <div id="title-section"> -->
  
         <h2><?php wp_title();  ?></h2>
           <p>
@@ -9,5 +9,5 @@
           
            </p>
  
-       </div>
+    <!--       </div> old title-section div -->
       </section>
