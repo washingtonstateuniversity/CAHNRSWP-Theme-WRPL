@@ -5,13 +5,19 @@ function register_my_menu() {
    register_nav_menus(
       array(
       'header-menu' => __( 'Header Menu' ),
-	  'primary' => __( 'Main Navigation Menu' )
+	  'primary' => __( 'Main Navigation Menu' ),
+	  'mobile-menu' => __( 'Mobile Menu' ),
 	   ) 
 	 );
    
  //  register_nav_menu( 'primary', 'Main Navigation Menu' );
 }
 add_action( 'init', 'register_my_menu' );
+
+function set_container_class ($args) {
+$args['container_class'] = str_replace(' ','-',$args['theme_location']).'-nav'; return $args;
+}
+add_filter ('wp_nav_menu_args', 'set_container_class');
 
 /* Add Featured Image to theme  */
 add_theme_support( 'post-thumbnails', array( 'page' ) );
