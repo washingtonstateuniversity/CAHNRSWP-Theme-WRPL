@@ -17,7 +17,7 @@
   <?php get_template_part( 'parts/header', 'logo' ); ?>
   <?php get_template_part( 'parts/header', 'nav' ); ?>
   
-  <?php  wp_nav_menu( array( 'theme_location' => 'mobile-menu' ) ); ?>
+  <?php  //wp_nav_menu( array( 'theme_location' => 'mobile-menu' ) ); ?>
  
 
 <!--</div> //-->
