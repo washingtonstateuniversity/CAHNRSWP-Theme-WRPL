@@ -128,16 +128,18 @@ function my_scripts_method() {
 if ( !is_admin() ) {
 	wp_enqueue_script('jquery-ui-accordion');
 	wp_enqueue_script(
-		'custom-accordion',
-		get_stylesheet_directory_uri() . '/js/accordion.js',
+		'custom-dropdown',
+		get_stylesheet_directory_uri() . '/js/menu.js',
 		array('jquery')
 		);
+	
+	
 	}
 }
+
 add_action('wp_enqueue_scripts', 'my_scripts_method');
 
-wp_register_style('jquery-custom-style', get_stylesheet_directory_uri().'/css/jquery-ui-1.8.23.custom.css', array(), '1', 'screen'); 
-wp_enqueue_style('jquery-custom-style');
+
 
 
 ?>
