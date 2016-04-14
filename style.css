@@ -424,9 +424,7 @@ background: #50878e;
  display: none;	
 }
 
-.hmenu { 
-  display: none;
-}
+
 /**** End of Nav section ****/
 
 main {
@@ -465,7 +463,8 @@ main {
 	.primary-nav {
 
 	 width: 200px;
-	 font-size: 81%;
+	 font-size: 91%;
+	 
 	}
 	main {
       margin: 0 0 0 200px;
@@ -474,6 +473,12 @@ main {
 	width: 50%;	
 	
 	}
+	.primary-nav li a {
+      padding: 0 .2rem 0 .5rem;
+	}
+	.primary-nav .menu {
+	  padding-left: 25px;
+    }
     #home-gallery .content-wrap {
 		 font-size: 65%;
 		}
@@ -483,9 +488,6 @@ main {
   }
 }
 
-.menu-icon {
- display: none;	
-}
 
 @media screen and (max-width: 700px) {
     main {
@@ -558,7 +560,7 @@ main {
  #header-nav .content-wrap {
 	background: #282828; 
 	text-align: left;	
-	padding: 0 5px;
+	padding: 5px 5px;
 	}
 	
 
