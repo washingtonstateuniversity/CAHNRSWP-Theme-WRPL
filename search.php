@@ -37,7 +37,7 @@ $total_results = $wp_query->found_posts;
     <main>
     
     <?php get_template_part( 'parts/search', 'title' ); ?>  
-    <?php get_template_part( 'parts/secondary', 'search' );?>
+    <?php get_template_part( 'parts/secondary', 'search2' );?>
 
      
     

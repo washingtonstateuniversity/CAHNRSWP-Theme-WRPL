@@ -53,6 +53,17 @@ h1, h3, h5, strong {
 	color: #50878E;
 }
 
+.search-thumb {
+	float:left;
+    margin: 0 10px 20px 0;
+    padding: 0 0 15px 0;
+	 
+	}
+.s-results {
+ width:auto;
+}
+
+
 .content-wrap {max-width: 1200px; margin: 0 auto; background: #282828; }
 
 .table{
@@ -99,7 +110,7 @@ width:100%;
 #header-logo {
 	background:#282828; 
 	color:#e4e4e4; 
-	padding: 25px 0;
+	padding: 25px;
 	}
 
 .mobile-menu-nav {
@@ -143,7 +154,7 @@ background: #50878e;
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 12px 8px;
+    padding: 12px; 
     text-decoration: none;
 }
 
@@ -213,7 +224,7 @@ background: #50878e;
 
 #home-section {
 	background: #eff0f2; 
-    padding: .8rem 2rem .8rem 2rem;
+    padding: .8rem 2rem .8rem 1rem;
 	}
 
 #home-gallery {
@@ -450,9 +461,9 @@ main {
  }
 
 @media screen and (max-width: 1200px) {
-    header{
+/*    header{
         padding: 0 .15rem;
-    }
+    } */
 	#home-gallery article {
 	  width: 33%;	
 	}
@@ -460,6 +471,8 @@ main {
 }
 
 @media screen and (max-width: 900px) {
+
+	
 	.primary-nav {
 
 	 width: 200px;
@@ -480,9 +493,13 @@ main {
 	  padding-left: 25px;
     }
     #home-gallery .content-wrap {
-		 font-size: 65%;
+		 font-size: 65%; 
 		}
 
+    #home-gallery article .summary {
+		
+	}
+	
    .dropdown-toggle {
 	display: none;  
   }
@@ -519,8 +536,14 @@ main {
 	  width: 100%;	
 	}
 	 #home-gallery .content-wrap {
-		 font-size: 50%;
+		 font-size: 100%;
 	}
+	#home-gallery article .summary {
+		font-size: 1rem;
+	}
+
+	
+	
 	#header-nav {
 		background: url(images/menu.png);
 	}
@@ -528,6 +551,7 @@ main {
 	 display: block;
 	 padding: 1px 5px;
 	 text-align:left;
+	 padding-bottom:1px;
 	 	
 	}
 	#header-nav li a:hover {
@@ -542,6 +566,7 @@ main {
 	 position: absolute;
 	 z-index: 9999;
 	 display: none;
+	 padding-top: 10px;
 
 	} 		
 	#header-nav #menu-pd-menu {
@@ -560,7 +585,7 @@ main {
  #header-nav .content-wrap {
 	background: #282828; 
 	text-align: left;	
-	padding: 5px 5px;
+	padding: 15px 15px;
 	}
 	
 
@@ -715,4 +740,11 @@ footer{
 	}
 #global-footer p {
 	margin: 0 auto;
+}
+
+@media screen and (min-width: 700px) {
+ #outside-header-nav-menu {
+	display: block !important;
+	 
+ }
 }
