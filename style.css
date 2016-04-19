@@ -52,6 +52,30 @@ h1, h3, h5, strong {
 	font-weight: bold;
 	color: #50878E;
 }
+.archive article {
+	width: 100%;
+/*	margin: 10px 10px 20px 10px; */
+	padding: 10px 10px 10px 10px;
+	background: #FBFBFB;
+	border: #fff solid;
+	height: 100px;	
+
+}
+
+.archive-thumb {
+ float:left;
+ /* width:50%; */
+    padding-right: 5px;
+    height: 100px;
+
+
+	vertical-align: top;
+     height: 100px;		
+}
+.archive-excerpt {
+ font-size: smaller;
+
+}
 
 .search-results-content article {
 	width: 100%;
