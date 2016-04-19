@@ -3,7 +3,7 @@
          <div class="archive">
           <?php   
 		  	$args = array(
-		'post_type' => 'page',
+		'post_type' => array('page','post',),
 		'exclude' => $frontpage_id,
 		'post_status' => 'publish',
 		'orderby' => 'menu_order title',
@@ -15,6 +15,7 @@
 			'terms'    => array( 'professional-development' ),
            ),   	
 		  ),
+
 	    );
 		
 			$the_query = new WP_Query( $args );
@@ -45,15 +46,18 @@
 					
      			echo '</h3></div>';
 				echo '<div class="archive-excerpt">'	;	
-					the_excerpt();
-						echo '</div>';
+//					the_excerpt();
+  echo substr(get_the_excerpt(), 0, 200);
+  echo '<a href="' . get_the_permalink() .'" > more » </a>';					
+					//	echo '<a href="' . get_permalink() . '" >more » </a></div>';
 						echo '</article>';
 					//
 				} // end while
       } //end if have_posts
 	  
   ?>	
+ 
          </div>
-  
+  <?php echo paginate_links( $args ); ?> 
        </div> <!-- class="content" -->
       </section>

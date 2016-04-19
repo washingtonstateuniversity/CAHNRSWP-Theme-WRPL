@@ -26,7 +26,7 @@ echo '<article class="clearfix">';
 	<?php the_title(); ?></a></h3>
 <!--	</h3> -->
     <?php  echo '<div class="search-results-excerpt">'; ?>
-    <?php the_excerpt(); ?><a href="<?php the_permalink()?>" >more » </a>
+	<?php  echo substr(get_the_excerpt(), 0, 200); ?><a href="<?php the_permalink()?>" > more » </a>
     </div>
     </div> 
 
